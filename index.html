@@ -94,4 +94,23 @@
       document.getElementById('ngjyra').style.backgroundColor=c1;
     }
   </script>
+
+  <input type="number" id="mosha" placeholder="Sheno Moshen">
+  <button type="submit" onclick="mosha()">MOSHA</button>
+  <p id="rezultatiii"></p>
+
+  <script>
+    function mosha()
+    {
+      var mosha=document.getElementById("mosha").value;
+      if(mosha>=18)
+      {
+        document.getElementById("rezultatiii").innerHTML="I rritur";
+      }
+      else
+      {
+        document.getElementById("rezultatiii").innerHTML="I mitur";
+      }
+    }
+  </script>
 </body>
