@@ -75,16 +75,23 @@
     }
   </script>
 
-  <h1>Ndrysho prapavije</h1>
+  <h1 id="ngjyra">Ndrysho prapavije</h1>
   <button type="submit" onclick="prapavija()">Ndrysho ngjyren</button>
 
   <script>
     function prapavija()
     {
       const colors=['red','blue','green'];
+      const colors1=['pink','purple','black'];
+      
       const index=Math.floor(Math.random()*colors.length)
+      const index1=Math.floor(Math.random()*colors1.length)
+      
       const c=colors[index];
+      const c1=colors1[index1];
+      
       document.body.style.backgroundColor=c;
+      document.getElementById('ngjyra').style.backgroundColor=c1;
     }
   </script>
 </body>
