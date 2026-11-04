@@ -34,18 +34,44 @@
       var numri1=document.getElementById('nr1').value;
       if numri(nr1>0)
       {
-        document.getElementById("result1").innerHtml="Numri eshte pozitiv";
+        document.getElementById("result1").innerHTML="Numri eshte pozitiv";
       }
       else if(nr1<0)
       {
-         document.getElementById("result1").innerHtml="Numri eshte negativ";
+         document.getElementById("result1").innerHTML="Numri eshte negativ";
       }
       else
       {
-        document.getElementById("result1").innerHtml="Numri eshte zero";
+        document.getElementById("result1").innerHTML="Numri eshte zero";
       }
     }
-    
   </script>
 
+
+  <input type="number" id="number1" placeholder="Sheno nr1">
+  <br>
+  <input type="number" id="number2" placeholder="Sheno nr2">
+  <button type="submit" onclick="kontrollonr()">Kontrollo</button>
+  <p id="rezultatii"></p>
+
+  <script>
+    function kontrollonr()
+    {
+      var a=document.getElementById('number1').value;
+      var b=document.getElementById('number2').value;
+
+      if(a>b)
+      {
+        document.getElementById('rezultatii').innterHTML="A eshte me i madh se B";
+      }
+      else if(a<b)
+      {
+        document.getElementById('rezultatii').innterHTML="A eshte me i vogel se B";
+      }
+      else
+      {
+        document.getElementById('rezultatii').innterHTML="A eshte me i barabarte me B";
+      }
+    }
+  </script>
 </body>
