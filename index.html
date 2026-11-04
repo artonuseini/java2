@@ -22,4 +22,26 @@
     }
   </script>
 
+
+  <input type="number" id="nr1" placeholder="Sheno numrin">
+  <button type="submit" onclick="pozitivnegativ()">Kontrollo</button>
+  <p id="result1"></p>
+
+  
+  <script>
+    function pozitivnegativ()
+    {
+      var numri1=document.getElementById('nr1').value;
+      if numri(nr1 % 2==0)
+      {
+        document.getElementById("result1").innerHtml="Numri eshte pozitiv";
+      }
+      else
+      {
+         document.getElementById("result1").innerHtml="Numri eshte negativ";
+      }
+    }
+    
+  </script>
+
 </body>
