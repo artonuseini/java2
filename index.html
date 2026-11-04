@@ -7,19 +7,18 @@
     function tekcift()
     {
       var numri=document.getElementById('nr').value;
-      if(numri%2==0)
-      {
-        document.getElementById('result').innnerHtml='Numer Cift';
+     if (numri == 0)
+   {
+      document.getElementById('result').innerHTML = 'Numri 0 nuk eshte as Cift as Tek';
+   }
+   else if (numri % 2 == 0)
+     {
+       document.getElementById('result').innerHTML = 'Numer Cift';
+     }
+   else
+     {
+       document.getElementById('result').innerHTML = 'Numer Tek';
       }
-      else if(numri%2!=0)
-      {
-        document.getElementById('result').innnerHtml='Numer Tek';
-      }
-      else
-      {
-        document.getElementById('result').innnerHtml='Numri 0 nuk eshte as Cift as Tek';
-      }
-      
     }
   </script>
 
