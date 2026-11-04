@@ -32,13 +32,17 @@
     function pozitivnegativ()
     {
       var numri1=document.getElementById('nr1').value;
-      if numri(nr1 % 2==0)
+      if numri(nr1>0)
       {
         document.getElementById("result1").innerHtml="Numri eshte pozitiv";
       }
-      else
+      else if(nr1<0)
       {
          document.getElementById("result1").innerHtml="Numri eshte negativ";
+      }
+      else
+      {
+        document.getElementById("result1").innerHtml="Numri eshte zero";
       }
     }
     
