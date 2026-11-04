@@ -1,0 +1,26 @@
+<body>
+  <input type="number" id="nr" placeholder="Sheno nr">
+  <button type="submit" onclick="tekcift()">Kontrollo</button>
+  <p id='result'></p>
+
+  <script>
+    function tekcift()
+    {
+      var numri=document.getElementById('nr').value;
+      if(numri%2==0)
+      {
+        document.getElementById('result').innnerHtml='Numer Cift';
+      }
+      else if(numri%2!=0)
+      {
+        document.getElementById('result').innnerHtml='Numer Tek';
+      }
+      else
+      {
+        document.getElementById('result').innnerHtml='Numri 0 nuk eshte as Cift as Tek';
+      }
+      
+    }
+  </script>
+
+</body>
